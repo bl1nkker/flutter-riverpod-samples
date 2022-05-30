@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_providers/pages/future_provider_page.dart';
 import 'package:riverpod_providers/pages/provider_page.dart';
+
 import 'package:riverpod_providers/pages/state_provider_page.dart';
 import 'package:riverpod_providers/pages/stream_provider_page.dart';
 import 'package:riverpod_providers/widgets/button_widget.dart';
@@ -95,16 +96,7 @@ class _HomePageState extends State<HomePage> {
             text: 'StreamProvider',
             onClicked: () => navigateTo(context, const StreamProviderPage()),
           ),
-          // const SizedBox(height: 12),
-          // ButtonWidget(
-          //   text: 'ScopedProvider',
-          //   onClicked: () => navigateTo(context, ScopedProviderPage()),
-          // ),
-          // const SizedBox(height: 12),
-          // ButtonWidget(
-          //   text: 'Combined Providers',
-          //   onClicked: () => navigateTo(context, CombinedProvidersPage()),
-          // ),
+          const SizedBox(height: 12),
         ],
       );
 
