@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_providers/pages/provider_page.dart';
 import 'package:riverpod_providers/widgets/button_widget.dart';
 
 void main() => runApp(ProviderScope(child: MyApp()));
@@ -74,33 +75,33 @@ class _HomePageState extends State<HomePage> {
         children: [
           ButtonWidget(
             text: 'Provider',
-            onClicked: () => navigateTo(context, ProviderPage()),
+            onClicked: () => navigateTo(context, const ProviderPage()),
           ),
-          const SizedBox(height: 12),
-          ButtonWidget(
-            text: 'StateProvider',
-            onClicked: () => navigateTo(context, StateProviderPage()),
-          ),
-          const SizedBox(height: 12),
-          ButtonWidget(
-            text: 'FutureProvider',
-            onClicked: () => navigateTo(context, FutureProviderPage()),
-          ),
-          const SizedBox(height: 12),
-          ButtonWidget(
-            text: 'StreamProvider',
-            onClicked: () => navigateTo(context, StreamProviderPage()),
-          ),
-          const SizedBox(height: 12),
-          ButtonWidget(
-            text: 'ScopedProvider',
-            onClicked: () => navigateTo(context, ScopedProviderPage()),
-          ),
-          const SizedBox(height: 12),
-          ButtonWidget(
-            text: 'Combined Providers',
-            onClicked: () => navigateTo(context, CombinedProvidersPage()),
-          ),
+          // const SizedBox(height: 12),
+          // ButtonWidget(
+          //   text: 'StateProvider',
+          //   onClicked: () => navigateTo(context, StateProviderPage()),
+          // ),
+          // const SizedBox(height: 12),
+          // ButtonWidget(
+          //   text: 'FutureProvider',
+          //   onClicked: () => navigateTo(context, FutureProviderPage()),
+          // ),
+          // const SizedBox(height: 12),
+          // ButtonWidget(
+          //   text: 'StreamProvider',
+          //   onClicked: () => navigateTo(context, StreamProviderPage()),
+          // ),
+          // const SizedBox(height: 12),
+          // ButtonWidget(
+          //   text: 'ScopedProvider',
+          //   onClicked: () => navigateTo(context, ScopedProviderPage()),
+          // ),
+          // const SizedBox(height: 12),
+          // ButtonWidget(
+          //   text: 'Combined Providers',
+          //   onClicked: () => navigateTo(context, CombinedProvidersPage()),
+          // ),
         ],
       );
 
