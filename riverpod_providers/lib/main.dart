@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_providers/pages/future_provider_page.dart';
 import 'package:riverpod_providers/pages/provider_page.dart';
 import 'package:riverpod_providers/pages/state_provider_page.dart';
 import 'package:riverpod_providers/widgets/button_widget.dart';
@@ -83,11 +84,11 @@ class _HomePageState extends State<HomePage> {
             text: 'StateProvider',
             onClicked: () => navigateTo(context, const StateProviderPage()),
           ),
-          // const SizedBox(height: 12),
-          // ButtonWidget(
-          //   text: 'FutureProvider',
-          //   onClicked: () => navigateTo(context, FutureProviderPage()),
-          // ),
+          const SizedBox(height: 12),
+          ButtonWidget(
+            text: 'FutureProvider',
+            onClicked: () => navigateTo(context, const FutureProviderPage()),
+          ),
           // const SizedBox(height: 12),
           // ButtonWidget(
           //   text: 'StreamProvider',
