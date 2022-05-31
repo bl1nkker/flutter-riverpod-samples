@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_providers/pages/future_provider_page.dart';
-import 'package:riverpod_providers/pages/provider_page.dart';
-
-import 'package:riverpod_providers/pages/state_provider_page.dart';
-import 'package:riverpod_providers/pages/stream_provider_page.dart';
+import 'package:riverpod_providers/pages/provider/future_provider_page.dart';
+import 'package:riverpod_providers/pages/provider/provider_page.dart';
+import 'package:riverpod_providers/pages/provider/state_provider_page.dart';
+import 'package:riverpod_providers/pages/provider/stream_provider_page.dart';
 import 'package:riverpod_providers/widgets/button_widget.dart';
 
 void main() => runApp(ProviderScope(child: MyApp()));
