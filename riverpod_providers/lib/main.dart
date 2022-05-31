@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_providers/pages/notifiers/change_notifier_provider_page.dart';
+import 'package:riverpod_providers/pages/notifiers/state_notifier_provider_page.dart';
 import 'package:riverpod_providers/pages/provider/future_provider_page.dart';
 import 'package:riverpod_providers/pages/provider/provider_page.dart';
 import 'package:riverpod_providers/pages/provider/state_provider_page.dart';
@@ -68,10 +70,30 @@ class _HomePageState extends State<HomePage> {
     switch (index) {
       case 0:
         return buildProviderPage(context);
+      case 1:
+        return buildNotifierPage(context);
       default:
         return Container();
     }
   }
+
+  Widget buildNotifierPage(BuildContext context) => Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ButtonWidget(
+            text: 'StateNotifierProvider',
+            onClicked: () =>
+                navigateTo(context, const StateNotifierProviderPage()),
+          ),
+          const SizedBox(height: 12),
+          ButtonWidget(
+            text: 'ChangeNotifierProvider',
+            onClicked: () =>
+                navigateTo(context, const ChangeNotifierProviderPage()),
+          ),
+          const SizedBox(height: 12),
+        ],
+      );
 
   Widget buildProviderPage(BuildContext context) => Column(
         mainAxisAlignment: MainAxisAlignment.center,
