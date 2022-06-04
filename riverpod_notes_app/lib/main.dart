@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icons.list,
                 page: const NotesListScreen()),
             buildNavigationButton(
-                context: context, icon: Icons.add, page: const AddNoteScreen()),
+                context: context, icon: Icons.add, page: AddNoteScreen()),
           ],
         ),
       ),
